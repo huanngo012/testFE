@@ -1,0 +1,160 @@
+.widget {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.top,
+.bottom {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.frame {
+  display: flex;
+  width: 204px;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.frame:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(40px);
+}
+
+.title-widget {
+  color: #fff;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+  user-select: none;
+}
+
+.sm-widget,
+.sm-widget-top {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  border-radius: 80px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0px 8px 16px 0px rgba(27, 27, 27, 0.16);
+  backdrop-filter: blur(40px);
+  cursor: pointer;
+}
+.sm-widget-top {
+  height: 176px;
+  border-radius: 24px;
+}
+.status-bottom {
+  justify-content: center;
+  gap: 36px;
+}
+.status-top {
+  gap: 16px;
+  align-self: stretch;
+}
+
+.status-bottom,
+.status-top {
+  display: flex;
+  align-items: center;
+}
+
+.icon-md,
+.icon-lg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 270px;
+  border: 2.25px solid var(--linear-card-stroke, #fff);
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+.icon-md {
+  width: 64px;
+  height: 64px;
+  padding: 12px;
+}
+.icon-lg {
+  width: 120px;
+  height: 120px;
+  padding: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .icon-lg {
+    width: 100px;
+    height: 100px;
+    padding: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .frame {
+    width: 150px;
+  }
+  .icon-lg {
+    width: 70px;
+    height: 70px;
+    padding: 12px;
+  }
+  .icon-md {
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+  }
+
+  .sm-widget-top {
+    height: 140px;
+    padding: 10px;
+  }
+  .title-widget {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .frame {
+    width: 100px;
+  }
+  .icon-lg {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+  }
+  .icon-md {
+    width: 35px;
+    height: 35px;
+    padding: 3px;
+  }
+  .sm-widget-top {
+    height: 120px;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 420) {
+  .top {
+    gap: 20px;
+  }
+  .frame {
+    width: 50px;
+  }
+  .icon-lg {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+  }
+  .icon-md {
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+  }
+  .status-top {
+    padding: 5px;
+  }
+}
