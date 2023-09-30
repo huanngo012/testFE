@@ -1,5 +1,5 @@
 import React from "react";
-import "./home.css";
+import "./Home.css";
 import imageMain from "../assets/image-632.png";
 import group from "../assets/group.svg";
 import boxIcon from "../assets/box.svg";
@@ -14,7 +14,7 @@ import logoutIcon from "../assets/logout.svg";
 import peopleIcon from "../assets/people.svg";
 import shoppingCartIcon from "../assets/shopping-cart.svg";
 import ticketDiscountIcon from "../assets/ticket-discount.svg";
-import Widget from "./widget/Widget";
+import Widget from "../components/widget/Widget";
 
 const widgetTop = [
   {

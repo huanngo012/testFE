@@ -54,6 +54,7 @@
 }
 @media screen and (max-width: 1200px) {
   .left {
+    margin-left: 10px;
     flex-direction: row;
   }
 }
